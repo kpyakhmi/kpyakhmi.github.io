@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanupriya Yakhmi - Executive Product Leader</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .flip-card {
+            perspective: 1000px;
+        }
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        .flip-card.flipped .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .flip-card-back {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body class="bg-black text-gray-300">
+
+    <!-- Header -->
+    <header class="bg-black/50 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 border-b border-gray-800">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-semibold text-white tracking-tight">Kanupriya Yakhmi</a>
+            <div class="hidden md:flex items-center space-x-2">
+                <a href="#philosophy" class="text-gray-300 hover:text-white px-3 py-2 transition-colors">My Thesis</a>
+                <a href="#execution" class="text-gray-300 hover:text-white px-3 py-2 transition-colors">The Proof</a>
+                <a href="#credentials" class="text-gray-300 hover:text-white px-3 py-2 transition-colors">Credentials</a>
+                <a href="#initiatives" class="text-gray-300 hover:text-white px-3 py-2 transition-colors">The Work</a>
+                <a href="#leadership" class="text-gray-300 hover:text-white px-3 py-2 transition-colors">The Impact</a>
+                <a href="#contact" class="bg-blue-600 text-white rounded-full px-4 py-2 hover:bg-blue-500 transition-colors text-sm font-medium">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="pt-40 pb-24 text-center">
+            <div class="container mx-auto px-6">
+                <h1 class="text-5xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-gray-400 mb-6 tracking-tighter">Architecting Value from Complexity.</h1>
+                <p class="text-lg md:text-xl text-gray-400 max-w-4xl mx-auto mb-12">As a product executive and startup advisor, I am also a dedicated mentor, coach, and champion for the next generation of women in technology.</p>
+                <img src="http://googleusercontent.com/file_content/uploaded:times-square.jpg-18806277-bd06-4b02-87da-11ed372b4e11" alt="Kanupriya Yakhmi in Times Square" class="w-full max-w-5xl mx-auto rounded-2xl shadow-2xl shadow-blue-500/10">
+            </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section id="philosophy" class="py-32 fade-in-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-center text-white mb-20 tracking-tighter">My Thesis: Product as a Catalyst for Growth</h2>
+                <div class="grid md:grid-cols-5 gap-16 items-center">
+                    <div class="md:col-span-3">
+                        <p class="text-gray-300 mb-6 text-xl">Product management is not my career; it is the engine of my own growth. It is a constant, welcome challenge that forces me to learn, adapt, and build better relationships. For me, this work is a direct expression of a core belief: that the best products don't just solve problems for customers, they empower them.</p>
+                        <p class="text-gray-400 text-lg mb-6">This philosophy is rooted in my personal history. Navigating new systems without a blueprint has forged in me a resilient, builder’s mindset. It’s what allows me to deconstruct intricate systems, whether in AI, enterprise SaaS, or robotics, and architect them into scalable, market-leading products. I am passionate about creating technology that not only drives business value, but also creates access and opens doors for others.</p>
+                        <p class="text-gray-400 text-lg">It’s why I actively mentor women in tech: to help them architect their own paths to success so they can live a life with their potential fully realized.</p>
+                    </div>
+                    <div class="md:col-span-2">
+                        <div class="bg-gray-900/50 p-8 rounded-2xl border border-gray-800">
+                            <h3 class="font-bold text-xl mb-6 text-white">My Strategic Approach</h3>
+                            <ul class="space-y-4">
+                                <li class="flex items-center text-gray-300"><svg class="w-5 h-5 mr-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M12 6V3m0 18v-3"></path></svg>Executive Product Strategy</li>
+                                <li class="flex items-center text-gray-300"><svg class="w-5 h-5 mr-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>AI & Deep Tech Commercialization</li>
+                                <li class="flex items-center text-gray-300"><svg class="w-5 h-5 mr-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>P&L Ownership & Growth</li>
+                                <li class="flex items-center text-gray-300"><svg class="w-5 h-5 mr-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>Organizational Design & Leadership</li>
+                                <li class="flex items-center text-gray-300"><svg class="w-5 h-5 mr-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v.01M12 12v-2m0 2v.01M12 12a2 2 0 00-2 2h4a2 2 0 00-2-2zm-2 4h4"></path></svg>Startup Advising & Fundraising</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Execution Section -->
+        <section id="execution" class="py-32 bg-gray-900/60 fade-in-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-center text-white mb-20 tracking-tighter">The Proof: A Record of Execution</h2>
+                <div class="max-w-3xl mx-auto">
+                    <div class="space-y-12">
+                         <div class="grid md:grid-cols-3 gap-6">
+                            <div class="col-span-1 text-gray-400 font-medium">Startup Advisory</div>
+                            <div class="col-span-2">
+                                <h3 class="text-white font-semibold">Empowering Founders</h3>
+                                <p class="text-gray-400 text-sm mb-2">I partner with founders to translate vision into investable reality. For a portfolio of over a dozen startups, I architected the core product strategies and data-driven roadmaps instrumental in <strong>securing over $5M in seed funding</strong>.</p>
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div class="col-span-1 text-gray-400 font-medium">Community Growth</div>
+                            <div class="col-span-2">
+                                <h3 class="text-white font-semibold">Building Platforms for Access</h3>
+                                <p class="text-gray-400 text-sm mb-2">I directed product initiatives that scaled a key community to <strong>over 1.8 million active users</strong>. This growth was instrumental in achieving an <strong>11% YoY increase in female representation</strong> in senior tech roles across partner organizations.</p>
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div class="col-span-1 text-gray-400 font-medium">AI & Operational Efficiency</div>
+                            <div class="col-span-2">
+                                <h3 class="text-white font-semibold">Driving Critical Efficiencies</h3>
+                                <p class="text-gray-400 text-sm mb-2">In the high-stakes autonomous vehicle sector, I orchestrated a cross-functional organization to develop AI/ML automation systems. This initiative <strong>reduced manual safety validation costs by 10%</strong>, a critical gain for the program.</p>
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div class="col-span-1 text-gray-400 font-medium">SaaS Portfolio Governance</div>
+                            <div class="col-span-2">
+                                <h3 class="text-white font-semibold">Accelerating Revenue & Delivery</h3>
+                                <p class="text-gray-400 text-sm mb-2">I governed a portfolio of five SaaS product lines with a budget exceeding $1.5M. By instituting rigorous technical requirements and leading an 18-person engineering team, I <strong>accelerated time-to-market by 7%</strong> and drove <strong>over $2 million in incremental revenue</strong>.</p>
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div class="col-span-1 text-gray-400 font-medium">Healthcare Platform Development</div>
+                            <div class="col-span-2">
+                                <h3 class="text-white font-semibold">Championing the User</h3>
+                                <p class="text-gray-400 text-sm mb-2">I spearheaded the development of a HIPAA-compliant platform for early disease detection. My patient-centric strategy resulted in a <strong>14% NPS improvement</strong> across a user base of over 500,000 patients and clinicians.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Credentials Section -->
+        <section id="credentials" class="py-32 fade-in-section">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-20 tracking-tighter">Credentials & Recognition</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
+                    <!-- McKinsey Card -->
+                    <div class="flip-card h-64 cursor-pointer group" onclick="this.classList.toggle('flipped')">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front bg-gray-900/50 p-8 rounded-2xl border border-gray-800 group-hover:shadow-2xl group-hover:shadow-blue-500/20 transition-all">
+                                <img src="http://googleusercontent.com/file_content/uploaded:McKinsey.orgForward20250707-27-atx23b.pdf" alt="McKinsey Certificate" class="w-full h-full object-contain">
+                            </div>
+                            <div class="flip-card-back bg-gray-900 p-6 rounded-2xl border border-gray-800 flex flex-col justify-center text-center">
+                                <h3 class="text-xl font-bold mb-2 text-white">McKinsey Product Academy</h3>
+                                <p class="text-gray-400 text-sm">Completed advanced training in product leadership, strategy, and development methodologies from a world-class institution.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PQ Card -->
+                    <div class="flip-card h-64 cursor-pointer group" onclick="this.classList.toggle('flipped')">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front bg-gray-900/50 p-8 rounded-2xl border border-gray-800 group-hover:shadow-2xl group-hover:shadow-blue-500/20 transition-all">
+                                <img src="http://googleusercontent.com/file_content/uploaded:NBHWC 100X Certificate -  Kanupriya Yakhmi.pdf" alt="Positive Intelligence Certificate" class="w-full h-full object-contain">
+                            </div>
+                            <div class="flip-card-back bg-gray-900 p-6 rounded-2xl border border-gray-800 flex flex-col justify-center text-center">
+                                <h3 class="text-xl font-bold mb-2 text-white">Positive Intelligence (PQ)</h3>
+                                <p class="text-gray-400 text-sm">Certified in mental fitness techniques to build resilience, improve performance, and foster positive, productive team relationships.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project ECHO Card -->
+                    <div class="flip-card h-64 cursor-pointer group" onclick="this.classList.toggle('flipped')">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front bg-gray-900/50 p-8 rounded-2xl border border-gray-800 group-hover:shadow-2xl group-hover:shadow-blue-500/20 transition-all">
+                                <img src="http://googleusercontent.com/file_content/uploaded:project echo judge certificate png.jpg-e556687c-13a9-4f66-a19e-a63ab154942b" alt="Project ECHO Certificate" class="w-full h-full object-contain">
+                            </div>
+                            <div class="flip-card-back bg-gray-900 p-6 rounded-2xl border border-gray-800 flex flex-col justify-center text-center">
+                                <h3 class="text-xl font-bold mb-2 text-white">Project ECHO Judge</h3>
+                                <p class="text-gray-400 text-sm">Selected as a judge to evaluate and mentor the next generation of entrepreneurs, assessing business plans for strategic and financial viability.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Initiatives Section -->
+        <section id="initiatives" class="py-32 bg-gray-900/60 fade-in-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-center text-white mb-20 tracking-tighter">The Work: From Blueprint to Bottom Line</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                     <div class="bg-black p-8 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                        <h3 class="text-xl font-bold mb-3 text-white">Therapeutic AI Platform</h3>
+                        <p class="text-gray-400">I directed product strategy for a therapeutic AI platform, defining the GTM plan and roadmap required to translate a novel scientific concept into a commercially viable wellness product.</p>
+                    </div>
+                    <div class="bg-black p-8 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                        <h3 class="text-xl font-bold mb-3 text-white">Immersive VR Education</h3>
+                        <p class="text-gray-400">I led the product vision for a VR learning platform, managing the end-to-end product lifecycle from user research to overseeing the cross-functional team that delivered the immersive tool.</p>
+                    </div>
+                    <div class="bg-black p-8 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                        <h3 class="text-xl font-bold mb-3 text-white">Warehouse Automation Robotics</h3>
+                        <p class="text-gray-400">I capitalized on a critical logistics bottleneck by spearheading the design of a robotic arm for automated package handling, translating complex operational needs into clear product requirements.</p>
+                    </div>
+                     <div class="bg-black p-8 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                        <h3 class="text-xl font-bold mb-3 text-white">Courier Management SaaS</h3>
+                        <p class="text-gray-400">I architected a multi-tenant logistics product from the ground up, leading the development and prioritization that scaled the MVP and proved the business model for wider market adoption.</p>
+                    </div>
+                     <div class="bg-black p-8 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                        <h3 class="text-xl font-bold mb-3 text-white">Children’s Education App</h3>
+                        <p class="text-gray-400">Through strategic market analysis, I identified and captured first-to-market advantage with a music-based learning app that successfully monetized educational screen time.</p>
+                    </div>
+                     <div class="bg-black p-8 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                        <h3 class="text-xl font-bold mb-3 text-white">Cloud Resource Optimization</h3>
+                        <p class="text-gray-400">I authored foundational research analyzing resource allocation in cloud environments, providing key insights for improving time and space consumption in cloud computing.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership & Mentorship Section -->
+        <section id="leadership" class="py-32 fade-in-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-center text-white mb-20 tracking-tighter">The Impact: Endorsements from Leaders</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <div class="bg-black/50 p-8 rounded-2xl border border-gray-800">
+                        <p class="text-gray-300 text-lg mb-6 italic">“From day one, her rare blend of emotional intelligence and technical depth stood out... she listened deeply and helped me craft an authentic, compelling narrative. If you want someone who’ll level up your product skills and mindset, Kanupriya is the mentor to have in your corner.”</p>
+                        <p class="font-semibold text-right text-white">- Palak M., TPM</p>
+                    </div>
+                    <div class="bg-black/50 p-8 rounded-2xl border border-gray-800">
+                        <p class="text-gray-300 text-lg mb-6 italic">“Kanupriya’s guidance has been instrumental in my growth... Her unwavering belief in people, combined with her deep expertise and strategic thinking, sets her apart. She has a remarkable ability to see potential in others and provide the right perspective.”</p>
+                        <p class="font-semibold text-right text-white">- Amruta B., Product Manager</p>
+                    </div>
+                     <div class="bg-black/50 p-8 rounded-2xl border border-gray-800">
+                        <p class="text-gray-300 text-lg mb-6 italic">“In just one session, KP provided more clarity than I had found in months. She didn't give me generic advice; she gave me a concrete, actionable strategy... I left our meeting with a clear research plan, a learning roadmap, and a renewed sense of confidence and purpose.”</p>
+                        <p class="font-semibold text-right text-white">- Shouryadip P., Master's Student</p>
+                    </div>
+                     <div class="bg-black/50 p-8 rounded-2xl border border-gray-800">
+                        <p class="text-gray-300 text-lg mb-6 italic">“Kanupriya made a strong first impression that carried over into her time with us. We put her to work immediately on a high-profile project and she was able to help right away to make it a success. She has strong organizational skills and a drive to get tasks completed.”</p>
+                        <p class="font-semibold text-right text-white">- Ryan J., Senior Manager</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Mentorship Feedback Section -->
+        <section id="mentorship-feedback" class="py-32 bg-gray-900/60 fade-in-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-center text-white mb-20 tracking-tighter">The Commitment: Mentoring Women in Tech</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <div class="bg-black/50 p-8 rounded-2xl border border-gray-800">
+                        <p class="text-gray-300 text-lg mb-6 italic">“She helped me realize that I need to work on my confidence and believe in myself. I am a much stronger and more confident person now. I am taking lessons I learnt from this mentorship beyond the sessions and would apply them to my life here on.”</p>
+                        <p class="font-semibold text-right text-white">- Priya S.</p>
+                    </div>
+                    <div class="bg-black/50 p-8 rounded-2xl border border-gray-800">
+                        <p class="text-gray-300 text-lg mb-6 italic">“It affected my mental stability. I felt hesitant about everything before and now I have hope... I feel calmer mentally and more enthusiastic and hopeful than before about my future career.”</p>
+                        <p class="font-semibold text-right text-white">- Anna R.</p>
+                    </div>
+                    <div class="bg-black/50 p-8 rounded-2xl border border-gray-800">
+                        <p class="text-gray-300 text-lg mb-6 italic">“What I also absolutely loved about my sessions is that it always and ALWAYS hit home with Kanupriya. I felt connected, belonged, felt seen and heard, and related with her in every meeting which had a profound impact on me on a personal level.”</p>
+                        <p class="font-semibold text-right text-white">- Maria V.</p>
+                    </div>
+                    <div class="bg-black/50 p-8 rounded-2xl border border-gray-800">
+                        <p class="text-gray-300 text-lg mb-6 italic">“Kanupriya's guidance was the catalyst I needed. Her suggestions were the most valuable part of our sessions, turning abstract thoughts into concrete actions. I'm no longer just thinking about my goals; I'm actively making progress on them.”</p>
+                        <p class="font-semibold text-right text-white">- S. Jones</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contact Section -->
+    <footer id="contact" class="bg-black border-t border-gray-800 mt-16">
+        <div class="container mx-auto px-6 py-20">
+            <div class="max-w-xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Connect With Me</h2>
+                <p class="mb-8 text-gray-400">I am actively seeking new opportunities in executive product leadership, startup advisory, and mentorship. If you are looking for a leader to help architect the future of your organization, or a partner to guide your growth, I invite you to connect.</p>
+                
+                <div id="form-container">
+                    <form id="contactForm" class="text-left">
+                        <div class="mb-4">
+                            <label for="inquiry" class="block text-gray-400 text-sm font-medium mb-2">Subject of Inquiry</label>
+                            <select id="inquiry" name="inquiry" required class="w-full bg-gray-900 border border-gray-700 rounded-md py-2 px-3 text-white focus:outline-none focus:border-blue-500">
+                                <option value="" disabled selected>Choose one...</option>
+                                <option value="Product Leadership Role">Product Leadership Role</option>
+                                <option value="Advisory Opportunity">Advisory Opportunity</option>
+                                <option value="Mentorship Request">Mentorship Request</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-400 text-sm font-medium mb-2">Name</label>
+                            <input type="text" id="name" name="name" required class="w-full bg-gray-900 border border-gray-700 rounded-md py-2 px-3 text-white focus:outline-none focus:border-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-400 text-sm font-medium mb-2">Email</label>
+                            <input type="email" id="email" name="email" required class="w-full bg-gray-900 border border-gray-700 rounded-md py-2 px-3 text-white focus:outline-none focus:border-blue-500">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-400 text-sm font-medium mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" required class="w-full bg-gray-900 border border-gray-700 rounded-md py-2 px-3 text-white focus:outline-none focus:border-blue-500"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="bg-blue-600 text-white rounded-full px-8 py-3 text-base font-semibold hover:bg-blue-500 transition-colors">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+                <div id="success-message" class="hidden text-center">
+                    <h3 class="text-2xl font-bold text-white">Thank You!</h3>
+                    <p class="text-gray-400 mt-2">Your message has been sent.</p>
+                </div>
+                
+                <div class="mt-12 flex justify-center space-x-6">
+                    <a href="https://www.linkedin.com/in/kanupriyayakhmi" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="sr-only">LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Fade-in animation on scroll
+        const sections = document.querySelectorAll('.fade-in-section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        sections.forEach(section => { observer.observe(section); });
+
+        // Contact Form Submission
+        const contactForm = document.getElementById('contactForm');
+        const formContainer = document.getElementById('form-container');
+        const successMessage = document.getElementById('success-message');
+
+        contactForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const form = e.target;
+            const data = new FormData(form);
+            
+            try {
+                const response = await fetch('https://formspree.io/f/xqkvzepr', {
+                    method: 'POST',
+                    body: data,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    formContainer.classList.add('hidden');
+                    successMessage.classList.remove('hidden');
+                } else {
+                    alert('Oops! There was a problem submitting your form.');
+                }
+            } catch (error) {
+                alert('Oops! There was a problem submitting your form.');
+            }
+        });
+    </script>
+
+</body>
+</html>
