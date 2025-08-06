@@ -283,6 +283,23 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modals -->
+    <div id="modal-mckinsey" class="modal fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50 opacity-0 pointer-events-none">
+        <div class="modal-content bg-gray-900 rounded-lg p-2 max-w-4xl w-full transform scale-95" onclick="event.stopPropagation()">
+            <img src="images/mckinsey-certificate.png" alt="McKinsey Certificate" class="w-full h-auto rounded">
+        </div>
+    </div>
+    <div id="modal-pq" class="modal fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50 opacity-0 pointer-events-none">
+        <div class="modal-content bg-gray-900 rounded-lg p-2 max-w-4xl w-full transform scale-95" onclick="event.stopPropagation()">
+            <img src="images/pq-certificate.png" alt="Positive Intelligence Certificate" class="w-full h-auto rounded">
+        </div>
+    </div>
+    <div id="modal-echo" class="modal fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50 opacity-0 pointer-events-none">
+        <div class="modal-content bg-gray-900 rounded-lg p-2 max-w-4xl w-full transform scale-95" onclick="event.stopPropagation()">
+            <img src="images/project-echo-certificate.jpg" alt="Project ECHO Certificate" class="w-full h-auto rounded">
+        </div>
+    </div>
     
     <script>
         // Smooth scroll for navigation links
@@ -336,6 +353,21 @@
                 alert('Oops! There was a problem submitting your form.');
             }
         });
+
+        // Modal functionality
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            modal.querySelector('.modal-content').classList.remove('scale-95');
+            modal.addEventListener('click', () => closeModal(modalId));
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.add('opacity-0', 'pointer-events-none');
+            modal.querySelector('.modal-content').classList.add('scale-95');
+            modal.removeEventListener('click', () => closeModal(modalId));
+        }
     </script>
 
 </body>
