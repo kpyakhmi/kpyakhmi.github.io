@@ -20,32 +20,11 @@
             opacity: 1;
             transform: translateY(0);
         }
-        .flip-card {
-            perspective: 1000px;
+        .modal {
+            transition: opacity 0.25s ease;
         }
-        .flip-card-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            transition: transform 0.6s;
-            transform-style: preserve-3d;
-        }
-        .flip-card.flipped .flip-card-inner {
-            transform: rotateY(180deg);
-        }
-        .flip-card-front, .flip-card-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .flip-card-back {
-            transform: rotateY(180deg);
+        .modal-content {
+            transition: transform 0.25s ease;
         }
     </style>
 </head>
@@ -153,41 +132,17 @@
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-4xl md:text-5xl font-bold text-white mb-20 tracking-tighter">Credentials & Recognition</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
-                    <!-- McKinsey Card -->
-                    <div class="flip-card h-64 cursor-pointer group" onclick="this.classList.toggle('flipped')">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front bg-gray-900/50 p-8 rounded-2xl border border-gray-800 group-hover:shadow-2xl group-hover:shadow-blue-500/20 transition-all">
-                                <img src="images/mckinsey-certificate.png" alt="McKinsey Certificate" class="w-full h-full object-contain">
-                            </div>
-                            <div class="flip-card-back bg-gray-900 p-6 rounded-2xl border border-gray-800 flex flex-col justify-center text-center">
-                                <h3 class="text-xl font-bold mb-2 text-white">McKinsey Product Academy</h3>
-                                <p class="text-gray-400 text-sm">Completed advanced training in product leadership, strategy, and development methodologies from a world-class institution.</p>
-                            </div>
-                        </div>
+                    <div class="bg-gray-900/50 p-8 rounded-2xl border border-gray-800 cursor-pointer hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20 transition-all" onclick="openModal('modal-mckinsey')">
+                        <h3 class="text-xl font-bold mb-3 text-white">McKinsey Product Academy</h3>
+                        <p class="text-gray-400">Completed advanced training in product leadership, strategy, and development methodologies from a world-class institution.</p>
                     </div>
-                    <!-- PQ Card -->
-                    <div class="flip-card h-64 cursor-pointer group" onclick="this.classList.toggle('flipped')">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front bg-gray-900/50 p-8 rounded-2xl border border-gray-800 group-hover:shadow-2xl group-hover:shadow-blue-500/20 transition-all">
-                                <img src="images/pq-certificate.png" alt="Positive Intelligence Certificate" class="w-full h-full object-contain">
-                            </div>
-                            <div class="flip-card-back bg-gray-900 p-6 rounded-2xl border border-gray-800 flex flex-col justify-center text-center">
-                                <h3 class="text-xl font-bold mb-2 text-white">Positive Intelligence (PQ)</h3>
-                                <p class="text-gray-400 text-sm">Certified in mental fitness techniques to build resilience, improve performance, and foster positive, productive team relationships.</p>
-                            </div>
-                        </div>
+                    <div class="bg-gray-900/50 p-8 rounded-2xl border border-gray-800 cursor-pointer hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20 transition-all" onclick="openModal('modal-pq')">
+                        <h3 class="text-xl font-bold mb-3 text-white">Positive Intelligence (PQ)</h3>
+                        <p class="text-gray-400">Certified in mental fitness techniques to build resilience, improve performance, and foster positive, productive team relationships.</p>
                     </div>
-                    <!-- Project ECHO Card -->
-                    <div class="flip-card h-64 cursor-pointer group" onclick="this.classList.toggle('flipped')">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front bg-gray-900/50 p-8 rounded-2xl border border-gray-800 group-hover:shadow-2xl group-hover:shadow-blue-500/20 transition-all">
-                                <img src="images/project-echo-certificate.jpg" alt="Project ECHO Certificate" class="w-full h-full object-contain">
-                            </div>
-                            <div class="flip-card-back bg-gray-900 p-6 rounded-2xl border border-gray-800 flex flex-col justify-center text-center">
-                                <h3 class="text-xl font-bold mb-2 text-white">Project ECHO Judge</h3>
-                                <p class="text-gray-400 text-sm">Selected as a judge to evaluate and mentor the next generation of entrepreneurs, assessing business plans for strategic and financial viability.</p>
-                            </div>
-                        </div>
+                    <div class="bg-gray-900/50 p-8 rounded-2xl border border-gray-800 cursor-pointer hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20 transition-all" onclick="openModal('modal-echo')">
+                        <h3 class="text-xl font-bold mb-3 text-white">Project ECHO Judge</h3>
+                        <p class="text-gray-400">Selected as a judge to evaluate and mentor the next generation of entrepreneurs, assessing business plans for strategic and financial viability.</p>
                     </div>
                 </div>
             </div>
